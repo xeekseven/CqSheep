@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CqSheep.RazorSample.Host</title>
+
+    <link rel="stylesheet" href="~/css/flex.css" />
+</head>
+<body>
+    <div class="flex-row flex-main-start flex-align-start">
+        <div>
+            @await Html.PartialAsync("~/Views/Partials/Admin/AdminMenusPartial.cshtml")
+        </div>
+        <div class="flex-column flex-main-start flex-align-center">
+            <div>
+                @await Html.PartialAsync("~/Views/Partials/Admin/AdminHeaderPartial.cshtml")
+            </div>
+            <div>@RenderBody()</div>
+            <div>
+                @await Html.PartialAsync("~/Views/Partials/Admin/AdminFooterPartial.cshtml")
+            </div>
+        </div>
+    </div>
+    
+    @RenderSection("Scripts", required: false)
+    @RenderSection("Css",required:false)
+</body>
+</html>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>CqSheep.RazorSample.Components</AssemblyName>
+    <RootNamespace>CqSheep.RazorSample.Components</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Partials\Charts\" />
+    <Folder Include="Views\Partials\Common\" />
+    <Folder Include="www\js\" />
+    <Folder Include="www\lib\" />
+  </ItemGroup>
+</Project>
