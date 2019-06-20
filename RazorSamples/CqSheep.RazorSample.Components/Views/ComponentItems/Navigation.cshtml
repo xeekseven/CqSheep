@@ -1,0 +1,28 @@
+@{
+    var data = ViewData["value"];
+}
+
+<div class="flex-row flex-main-start flex-align-center navigation">
+    <a>Admin</a>
+    <span>></span>
+    <a>Auth</a>
+</div>
+<style>
+    .navigation{
+        height: 1.5rem;
+        background-color: #fff;
+        border-radius: 0.73rem;
+        margin: 1rem;
+        font-size: 14px;
+        padding: 0 1.5rem;
+    }
+    .navigation > a{
+        text-decoration: none;
+        font-size: inherit;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .navigation > span{
+        margin:0 6px;
+    }
+</style>

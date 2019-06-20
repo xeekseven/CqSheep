@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xeekseven\\source\\repos\\RazorSamples\\CqSheep.RazorSample.Models\\CqSheep.RazorSample.Models.csproj",
+      "projectUniqueName": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Models\\CqSheep.RazorSample.Models.csproj",
       "projectName": "CqSheep.RazorSample.Models",
-      "projectPath": "C:\\Users\\xeekseven\\source\\repos\\RazorSamples\\CqSheep.RazorSample.Models\\CqSheep.RazorSample.Models.csproj",
+      "projectPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Models\\CqSheep.RazorSample.Models.csproj",
       "packagesPath": "C:\\Users\\xeekseven\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xeekseven\\source\\repos\\RazorSamples\\CqSheep.RazorSample.Models\\obj\\",
+      "outputPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -12978,11 +12978,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xeekseven\\source\\repos\\RazorSamples\\CqSheep.RazorSample.Host\\CqSheep.RazorSample.Host.csproj",
+      "projectUniqueName": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Host\\CqSheep.RazorSample.Host.csproj",
       "projectName": "CqSheep.RazorSample.Host",
-      "projectPath": "C:\\Users\\xeekseven\\source\\repos\\RazorSamples\\CqSheep.RazorSample.Host\\CqSheep.RazorSample.Host.csproj",
+      "projectPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Host\\CqSheep.RazorSample.Host.csproj",
       "packagesPath": "C:\\Users\\xeekseven\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xeekseven\\source\\repos\\RazorSamples\\CqSheep.RazorSample.Host\\obj\\",
+      "outputPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Host\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -13003,8 +13003,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\xeekseven\\source\\repos\\RazorSamples\\CqSheep.RazorSample.Components\\CqSheep.RazorSample.Components.csproj": {
-              "projectPath": "C:\\Users\\xeekseven\\source\\repos\\RazorSamples\\CqSheep.RazorSample.Components\\CqSheep.RazorSample.Components.csproj"
+            "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Components\\CqSheep.RazorSample.Components.csproj": {
+              "projectPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Components\\CqSheep.RazorSample.Components.csproj"
             }
           }
         }

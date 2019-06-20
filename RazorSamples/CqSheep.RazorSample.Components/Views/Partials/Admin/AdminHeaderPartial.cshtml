@@ -1,14 +1,34 @@
 ﻿<div class="flex-row flex-main-between flex-align-center header-banner">
-    <div class="flex-row flex-main-center flex-align-center" >
+    <div class="flex-row flex-main-center flex-align-center" style="width:100%">
         <partial name="~/Views/ComponentItems/SearchInput.cshtml"></partial>
     </div>
-    <div class="flex-row flex-main-end flex-align-center" >
-        <div class="header-ring"></div>
-        <div class="flex-row flex-main-center flex-align-center" >
-            <div class="header-headImage">头像</div>
+    <div class="flex-row flex-main-end flex-align-center header-banner-right">
+        <div class="header-notice">
+            <span class="glyphicon glyphicon-knight">
+            </span>
+        </div>
+        <div class="flex-row flex-main-center flex-align-center header-menu">
+            <div class="header-headImage">
+                <img src="~/images/0.jpg" />
+            </div>
             <div class="header-other">
-                <span>其他选项</span>
-                <span></span>
+                <span style="color: rgba(0,0,0,.5);">xeekseven</span>
+                <span class="glyphicon glyphicon-triangle-bottom" style="margin-top:2px;cursor:pointer"></span>
+                <div class="flex-column flex-main-start flex-align-start dropdown-menu dropdown-menu-small hide" style="display: block;">
+                    <a class="dropdown-item" href="user-profile-lite.html">
+                        <span class="glyphicon glyphicon-user"></span> Profile
+                    </a>
+                    <a class="dropdown-item" href="components-blog-posts.html">
+                        <span class="glyphicon glyphicon-list"></span> Blog Posts
+                    </a>
+                    <a class="dropdown-item" href="add-new-post.html">
+                        <span class="glyphicon glyphicon-piggy-bank"></span> Add New Post
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="#">
+                        <span class="glyphicon glyphicon-log-out text-danger"></span>Logout
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -16,7 +36,90 @@
 </div>
 
 <style>
+    .text-danger {
+        color: #c4183c !important;
+    }
 
+    .dropdown-menu {
+        margin-top:0;
+        position: absolute;
+        width: 11rem;
+        right: 0;
+        float: none;
+        left: auto;
+        top: 3.75rem;
+        display: block;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: none;
+        text-align: center;
+    }
+
+    .dropdown-menu-small {
+    }
+
+    .header-notice {
+        width: 4rem;
+        text-align: center;
+    }
+
+        .header-notice > .glyphicon {
+            font-size: 1.4rem;
+            color: #756e6e;
+            margin: 0;
+            cursor: pointer
+        }
+
+    .dropdown-divider {
+        margin: .25rem 0;
+        height: 0;
+        overflow: hidden;
+        border-top: 1px solid #e9ecef;
+    }
+
+    .dropdown-item {
+        display: block;
+        text-align: start;
+        padding: .375rem .875rem;
+        font-size: .813rem;
+        color: rgba(0,0,0,.5);
+        font-weight: 300;
+    }
+
+    a[class~="dropdown-item"]:hover {
+        text-decoration: none;
+        background-color: #f1f0f0;
+    }
+
+    .header-banner {
+        height: 3.75rem;
+        box-shadow: 0 0.125rem 0.625rem rgba(90,97,105,.12);
+    }
+
+    .header-headImage {
+        width: 4rem;
+        text-align: center;
+    }
+
+        .header-headImage > img {
+            max-width: 2.5rem;
+            border-radius: 50% !important;
+        }
+
+    .header-other {
+        width: 7rem;
+    }
+
+    .header-menu {
+        height: 100%;
+        border-left: 1px solid #e1e5eb !important;
+    }
+
+    .header-banner-right {
+        border-left: 1px solid #e1e5eb !important;
+        height: 100%;
+        width: 15rem;
+    }
 </style>
 <script>
 

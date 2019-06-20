@@ -1,7 +1,120 @@
 ﻿
-<div class="flex-column flex-main-start flex-align-center">
-    <div>Cq Sheep</div>
-    <div>权限管理</div>
-    <div>网站统计</div>
-    <div>item1</div>
+<div class="flex-column flex-main-start flex-align-center menu-contain">
+    <div class="menu menu-title">
+        <div class="flex-row flex-main-center flex-align-center mt-table">
+            <img id="main-logo" class="mt-table-logo" style="max-width: 25px;" src="~/images/shards-dashboards-logo-info.svg" alt="Shards Dashboard">
+            <span class="mt-title">Shards Dashboard</span>
+        </div>
+    </div>
+    <div class="menu menu-selector">
+        <ul class="flex-column flex-main-start flex-align-start nav">
+            <li class="menu-item">
+                <a class="menu-link active" href="index.html">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <span>Blog Dashboard</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="components-blog-posts.html">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                    <span>Blog Posts</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link " href="add-new-post.html">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <span>Add New Post</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link " href="form-components.html">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <span>Forms &amp; Components</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link " href="tables.html">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <span>Tables</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link " href="user-profile-lite.html">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <span>User Profile</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link " href="errors.html">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <span>Errors</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
+<style>
+    .menu-contain {
+        width:16.7%;
+        top: 0px;
+        position: fixed;
+        height: 100%;
+        z-index: 1070;
+        box-shadow: rgba(90, 97, 105, 0.1) 0px 0.125rem 9.375rem, rgba(90, 97, 105, 0.12) 0px 0.25rem 0.5rem, rgba(90, 97, 105, 0.1) 0px 0.9375rem 1.375rem, rgba(165, 182, 201, 0.1) 0px 0.4375rem 2.1875rem;
+    }
+    .mt-title{
+        line-height: 25px;
+        font-weight: 500;
+        font-size: 1rem;
+        color: rgba(0,0,0,.9);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        margin-left: 0.5rem;
+        cursor: pointer;
+    }
+    .menu {
+        width: 100%;
+    }
+
+    .menu-title {
+        padding: 18px 0;
+        border-bottom: 1px solid #e1e5eb;
+    }
+    .menu-item{
+        color: #007bff;
+        background-color: #fbfbfb;
+        color: #007bff;
+        width: 100%;
+    }
+    .menu-link{
+        border-bottom: 1px solid #e1e5eb;
+        font-weight: 400;
+        color: #3d5170;
+        padding: .9375rem 1.5625rem !important;  
+    }
+    .menu-item:hover{
+        background-color: #fbfbfb !important;  
+    }
+    .menu-item > a:hover{
+        box-shadow: inset 0.1875rem 0 0 #007bff;
+        background-color: #fbfbfb !important;  
+        color: #007bff;
+    }
+    .menu-link:hover span{
+        color: #007bff;
+    }
+    .glyphicon{
+        font-size: 1.125rem;
+        top: -1px;
+        min-width: 1.25rem;
+        font-size: 90%;
+        text-align: center;
+        vertical-align: middle;
+        will-change: color;
+        color: #cacedb;
+        transition: color .2s ease;
+        margin-right: .375rem;
+    }
+    .glyphicon:hover{
+        color: #3d5170;
+    }
+</style>

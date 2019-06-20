@@ -1,1 +1,27 @@
-﻿<input class="componentItems-searchInput" type="search" placeholder="输入你想搜索的"/>
+﻿<div class="component-searchInput">
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    <input class="componentItems-searchInput" type="search" placeholder="输入你想搜索的" />
+</div>
+<style>
+    .component-searchInput {
+         margin-left: 2.3rem;
+         width:100%;
+    }
+
+    .componentItems-searchInput {
+        width:95%;
+        padding: 0rem 0.75rem;
+        font-size: .8125rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        border: 0px solid #e1e5eb;
+        font-weight: 300;
+        will-change: border-color,box-shadow;
+        border-radius: .25rem;
+        box-shadow: none;
+        transition: box-shadow 250ms cubic-bezier(.27,.01,.38,1.06),border 250ms cubic-bezier(.27,.01,.38,1.06);
+        height: 1.75rem;
+        border-radius: 1rem;
+    }
+</style>

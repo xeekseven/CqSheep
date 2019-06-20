@@ -7,10 +7,12 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\css\flex.css" />
+    <Content Remove="wwwroot\images\shards-dashboards-logo-info.svg" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\css\flex.css" />
+    <None Include="wwwroot\images\shards-dashboards-logo-info.svg" />
   </ItemGroup>
 
 

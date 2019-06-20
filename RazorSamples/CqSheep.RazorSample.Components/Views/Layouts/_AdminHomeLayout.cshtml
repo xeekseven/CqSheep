@@ -1,29 +1,52 @@
 ﻿<!DOCTYPE html>
-<html>
+<html style="font-size:unset">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CqSheep.RazorSample.Host</title>
 
     <link rel="stylesheet" href="~/css/flex.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        .header-position {
+            position: sticky;
+            width: 100%;
+            top: 0;
+            background-color: #fff;
+        }
+        .content-position{
+            background-color: #f4f5f7;
+            width: 100%;
+        }
+        .footer-position{
+            width: 100%;
+            height: 3.75rem;
+            border-top: 1px solid #e1e5eb!important;
+            background-color: #fff!important;
+        }
+    </style>
 </head>
-<body>
+<body style="margin:0">
     <div class="flex-row flex-main-start flex-align-start">
-        <div>
+        <div style="width:16.7%;">
             @await Html.PartialAsync("~/Views/Partials/Admin/AdminMenusPartial.cshtml")
         </div>
-        <div class="flex-column flex-main-start flex-align-center">
-            <div>
+        <div class="flex-column flex-main-start flex-align-center" style="width:83.3%">
+            <div class="header-position">
                 @await Html.PartialAsync("~/Views/Partials/Admin/AdminHeaderPartial.cshtml")
             </div>
-            <div>@RenderBody()</div>
-            <div>
+            <div class="content-position">
+                @await Html.PartialAsync("~/Views/ComponentItems/Navigation.cshtml")
+                @RenderBody()
+            </div>
+            <div class="footer-position">
                 @await Html.PartialAsync("~/Views/Partials/Admin/AdminFooterPartial.cshtml")
             </div>
         </div>
     </div>
-    
+
     @RenderSection("Scripts", required: false)
-    @RenderSection("Css",required:false)
+    @RenderSection("Css", required: false)
 </body>
 </html>
