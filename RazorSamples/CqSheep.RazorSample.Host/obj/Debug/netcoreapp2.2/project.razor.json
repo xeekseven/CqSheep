@@ -2973,6 +2973,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\Overview.cshtml",
+      "TargetPath": "Views\\Admin\\Overview.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

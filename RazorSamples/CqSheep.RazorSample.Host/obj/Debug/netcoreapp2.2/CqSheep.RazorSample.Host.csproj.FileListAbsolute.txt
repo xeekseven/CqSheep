@@ -70,3 +70,4 @@ D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\obj\Debug\netcoreapp2.2\C
 D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\obj\Debug\netcoreapp2.2\CqSheep.RazorSample.Host.csproj.CopyComplete
 D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\obj\Debug\netcoreapp2.2\CqSheep.RazorSample.Host.dll
 D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\obj\Debug\netcoreapp2.2\CqSheep.RazorSample.Host.pdb
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Overview.g.cshtml.cs
