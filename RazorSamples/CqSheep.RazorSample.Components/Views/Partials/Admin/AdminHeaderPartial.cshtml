@@ -13,8 +13,8 @@
             </div>
             <div class="header-other">
                 <span style="color: rgba(0,0,0,.5);">xeekseven</span>
-                <span class="glyphicon glyphicon-triangle-bottom" style="margin-top:2px;cursor:pointer"></span>
-                <div class="flex-column flex-main-start flex-align-start dropdown-menu dropdown-menu-small hide" style="display: block;">
+                <span class="glyphicon glyphicon-triangle-bottom" style="margin-top:2px;cursor:pointer;z-index:1000"></span>
+                <div class="flex-column flex-main-start flex-align-start dropdown-menu dropdown-menu-small">
                     <a class="dropdown-item" href="user-profile-lite.html">
                         <span class="glyphicon glyphicon-user"></span> Profile
                     </a>
@@ -56,6 +56,8 @@
     }
 
     .dropdown-menu-small {
+        display:none;
+        z-index:1000
     }
 
     .header-notice {
@@ -122,5 +124,17 @@
     }
 </style>
 <script>
-
+    $(document).ready(function(){
+        $('.header-other span.glyphicon-triangle-bottom').click(function(){
+            toggle('.dropdown-menu')
+        })
+        function toggle(selectorText){
+            if($(selectorText).css('display') == 'none'){
+                $(selectorText).show()
+            }
+            else{
+                $(selectorText).hide()
+            }
+        }
+    })
 </script>

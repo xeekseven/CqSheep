@@ -2988,6 +2988,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\TableStat.cshtml",
+      "TargetPath": "Views\\Admin\\TableStat.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\TestLayout.cshtml",
       "TargetPath": "Views\\Shared\\TestLayout.cshtml",
       "FileKind": "mvc"
@@ -2996,6 +3001,12 @@
       "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Admin\\Login.cshtml",
+      "TargetPath": "Views\\Admin\\Login.cshtml",
+      "FileKind": "mvc"
     }
-  ]
+  ],
+  "SerializationFormat": "0.1"
 }

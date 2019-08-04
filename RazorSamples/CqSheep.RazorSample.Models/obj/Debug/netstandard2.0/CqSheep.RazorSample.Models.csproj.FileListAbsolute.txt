@@ -1,0 +1,9 @@
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Models\bin\Debug\netstandard2.0\CqSheep.RazorSample.Models.deps.json
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Models\bin\Debug\netstandard2.0\CqSheep.RazorSample.Models.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Models\bin\Debug\netstandard2.0\CqSheep.RazorSample.Models.pdb
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Models\obj\Debug\netstandard2.0\CqSheep.RazorSample.Models.csprojAssemblyReference.cache
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Models\obj\Debug\netstandard2.0\CqSheep.RazorSample.Models.csproj.CoreCompileInputs.cache
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Models\obj\Debug\netstandard2.0\CqSheep.RazorSample.Models.AssemblyInfoInputs.cache
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Models\obj\Debug\netstandard2.0\CqSheep.RazorSample.Models.AssemblyInfo.cs
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Models\obj\Debug\netstandard2.0\CqSheep.RazorSample.Models.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Models\obj\Debug\netstandard2.0\CqSheep.RazorSample.Models.pdb

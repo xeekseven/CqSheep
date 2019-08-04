@@ -19,6 +19,9 @@ namespace CqSheep.RazorSample.Host
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration((context,config)=>{
+                config.AddJsonFile("appsettings.json",optional:true,reloadOnChange:true);
+            })
                 .UseStartup<Startup>();
     }
 }

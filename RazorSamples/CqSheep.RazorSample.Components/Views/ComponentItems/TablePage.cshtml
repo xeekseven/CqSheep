@@ -1,0 +1,92 @@
+@{
+    var fakeList = new List<List<string>>();
+    for(int i=0;i<100;i++){
+        var nList = new List<string>();
+        nList.Add(i.ToString());
+        for(int j=0;j<6;j++){
+            nList.Add("Table cell");
+        }
+        fakeList.Add(nList);
+    }
+    var count = 301;
+    var pageSize = 50;
+
+    int pageIndex = 5;
+    int pageMax =Convert.ToInt32(Math.Ceiling((count / (pageSize*1.0))));
+    int pageMiddle = (pageMax - pageIndex) / 2 + pageIndex;
+    int pageIndexNext = pageIndex + 1;
+    int pageMaxPre = pageMax - 1;
+    int pageMPre = pageMiddle - 1;
+    int pageMNext = pageMiddle + 1;
+
+}
+
+<div class="flex-column flex-main-start flex-align-center component">
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+          </tr>
+        </thead>
+        <tbody>
+            @for (int i=0;i<50;i++)
+            {
+                <tr>
+                    <th scope="row">@i</th>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <ul class="pagination pagination-sm">
+        <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+        <li><a href="#">@pageIndex</a></li>
+        @if (pageIndexNext < pageMPre)
+        {
+            <li><a href="#">@pageIndexNext</a></li>
+        }
+        @if (pageMiddle > pageIndex && pageMiddle < pageMax)
+        {
+            <li><a href="#">....</a></li>
+            if (pageMPre >= pageIndexNext)
+            {
+                <li><a href="#">@pageMPre</a></li>
+            }
+
+            <li><a href="#">@pageMiddle</a></li>
+            if (pageMNext <= pageMaxPre)
+            {
+                <li><a href="#">@pageMNext</a></li>
+            }
+            <li><a href="#">....</a></li>
+        }
+        @if (pageMaxPre > pageMNext)
+        {
+            <li><a href="#">@pageMaxPre</a></li>
+        }
+        @if(pageIndex != pageMax){
+            <li><a href="#">@pageMax</a></li>
+        }
+        
+        <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+    </ul>
+</div>
+<style>
+    .component{
+        padding: 1rem;
+        border: 1rem #eaebed solid;
+        border-radius: 2rem;
+        background-color: #fff;
+    }
+</style>

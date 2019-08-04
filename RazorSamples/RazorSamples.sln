@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28917.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqSheep.RazorSample.Components", "CqSheep.RazorSample.Components\CqSheep.RazorSample.Components.csproj", "{A585F024-E2C1-4935-89DB-E1BE7C4784F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqSheep.RazorSample.Components", "CqSheep.RazorSample.Components\CqSheep.RazorSample.Components.csproj", "{A585F024-E2C1-4935-89DB-E1BE7C4784F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqSheep.RazorSample.Host", "CqSheep.RazorSample.Host\CqSheep.RazorSample.Host.csproj", "{EB05EC1F-F7EE-4E26-8B51-FD38F759B7EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqSheep.RazorSample.Host", "CqSheep.RazorSample.Host\CqSheep.RazorSample.Host.csproj", "{EB05EC1F-F7EE-4E26-8B51-FD38F759B7EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqSheep.RazorSample.Models", "CqSheep.RazorSample.Models\CqSheep.RazorSample.Models.csproj", "{66481105-9AF7-4BF1-BD4A-EDBA8C72DD8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqSheep.RazorSample.Models", "CqSheep.RazorSample.Models\CqSheep.RazorSample.Models.csproj", "{66481105-9AF7-4BF1-BD4A-EDBA8C72DD8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

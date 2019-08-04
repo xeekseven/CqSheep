@@ -1,12 +1,20 @@
 @{
-    var data = ViewData["value"];
+    var pathDic = ViewData["RoutePath"];
+    var pathDictionary = new Dictionary<string,string>();
+    if(pathDic != null){
+        pathDictionary = pathDic as  Dictionary<string,string>;
+    }
+
 }
 
-<div class="flex-row flex-main-start flex-align-center navigation">
-    <a>Admin</a>
-    <span>></span>
-    <a>Auth</a>
-</div>
+    <div class="flex-row flex-main-start flex-align-center navigation">
+        <a>Admin</a>
+        @foreach (var kv in pathDictionary)
+        {
+            <span>></span>
+            <a href="@kv.Value">@kv.Key</a>
+        }
+    </div>
 <style>
     .navigation{
         height: 1.5rem;

@@ -1,70 +1,25 @@
+@using CqSheep.RazorSample.Components.Utils
 @{
     ViewData["Title"] = "AdminOverview";
+    ViewData["MenuType"] = MenuType.OverViews;
+    ViewData["RoutePath"] = PageUtil.GetPathDic("Overview", "/Admin/Overview");
     Layout = "~/Views/Layouts/_AdminHomeLayout.cshtml";
 }
 <div class="flex-column flex-main-start flex-align-center">
     <div class="flex-row flex-main-start flex-align-center flex-nowarp statistics-container">
-        <div class="flex-column flex-main-center flex-align-center chart-overview" >
-            <div>
-                IP 访问量
-            </div>
-            <div>
-                1312
-            </div>
-            <div>
-                22%
-            </div>
-            <canvas id="div-ip" style="position: absolute;">
+        <div class="flex-column flex-main-center flex-align-center chart-overview" id="div-ip">
+        </div>
+        <div class="flex-column flex-main-center flex-align-center chart-overview" id="div-2">
+        </div>
+        <div class="flex-column flex-main-center flex-align-center chart-overview" id="div-3">
+        </div>
+        <div class="flex-column flex-main-center flex-align-center chart-overview" id="div-4">
+        </div>
+        <div class="flex-column flex-main-center flex-align-center chart-overview" id="div-5">
+        </div>
+    </div>
+    <div class="flex-row flex-main-start flex-align-center flex-nowarp text-container">
 
-            </canvas>
-        </div>
-
-        <div class="flex-column flex-main-center flex-align-center chart-overview">
-            <div>
-                Users
-            </div>
-            <div>
-                2312
-            </div>
-            <div>
-                132%
-            </div>
-        </div>
-
-        <div class="flex-column flex-main-center flex-align-center chart-overview">
-            <div>
-                Errors
-            </div>
-            <div>
-                2312
-            </div>
-            <div>
-                -32%
-            </div>
-        </div>
-
-        <div class="flex-column flex-main-center flex-align-center chart-overview">
-            <div>
-                停留时间
-            </div>
-            <div>
-                12
-            </div>
-            <div>
-                -232%
-            </div>
-        </div>
-        <div class="flex-column flex-main-center flex-align-center chart-overview">
-            <div>
-                备用
-            </div>
-            <div>
-                12
-            </div>
-            <div>
-                -232%
-            </div>
-        </div>
     </div>
     <div class="flex-row flex-main-start flex-align-center main-stat-container">
         <div class="flex-column flex-main-start flex-align-center main-left">
@@ -76,15 +31,15 @@
                 <input name="endDate" id="date-end" type="text">
             </div>
             <div class="main-chart" id="chart-main">
-                
+
             </div>
         </div>
-        <div class="flex-column flex-main-start flex-align-center main-right" >
+        <div class="flex-column flex-main-start flex-align-center main-right">
             <div class="flex-row flex-main-start flex-align-center main-chart-title border-bottom">
                 <h6>Users From</h6>
             </div>
             <div class="right-chart" id="chart-pie">
-                
+
             </div>
             <div class="flex-row flex-main-center flex-align-center main-right-selector">
                 <input name="startDate" id="date-start" type="text">
@@ -94,256 +49,159 @@
     </div>
 </div>
 
-
+<script src="/js/echartUtil.js"></script>
 <style>
-    .main-chart{
-        height:30rem;
-        width:100%;
-        padding-top:1rem
+    .main-chart {
+        height: 30rem;
+        width: 100%;
+        padding-top: 1rem
     }
-    .main-left-selector{
-        border-bottom: 1px solid #889bb7!important;
-        background-color: #f7f7f7!important;
+
+    .main-left-selector {
+        border-bottom: 1px solid #889bb7 !important;
+        background-color: #f7f7f7 !important;
         padding: 0.7rem 0;
         width: 100%;
     }
-    .main-right-selector{
-        border-top: 1px solid #889bb7!important;
+
+    .main-right-selector {
+        border-top: 1px solid #889bb7 !important;
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
-        background-color: #f7f7f7!important;
+        background-color: #f7f7f7 !important;
         padding: 0.7rem 0;
         width: 100%;
     }
-    .main-left{
+
+    .main-left {
         width: 66%;
         background-color: #fff;
-        margin:0.5rem 1rem 1.5rem 1rem;
+        margin: 0.5rem 1rem 1.5rem 1rem;
         border-radius: 0.5rem;
         box-shadow: 0 0.325rem 0.825rem rgba(90, 97, 105, 0.31);
     }
-    .main-right{
+
+    .main-right {
         margin: 0.5rem 1rem 1.5rem 1rem;
-        width: 29%;
+        width: 30%;
         background-color: #fff;
         border-radius: 0.5rem;
         box-shadow: 0 0.325rem 0.825rem rgba(90, 97, 105, 0.31);
     }
-    .right-chart{
-        height:30rem;
-        width:100%;
-        padding-top:1rem
+
+    .right-chart {
+        height: 30rem;
+        width: 100%;
+        padding-top: 1rem
     }
-    .main-stat-container{
+
+    .main-stat-container {
         width: 100%;
     }
-    .statistics-container{
+
+    .text-container {
+        width: 100%;
+        border: 1rem #eaebed solid;
+        border-radius: 1.6rem;
+        height: 10rem;
+        background: #fff;
+    }
+
+    .statistics-container {
         width: 100%;
     }
-    .chart-overview{
+
+    .chart-overview {
         width: 18%;
         background-color: #fff;
         height: 8.8rem;
-        margin: 0.5rem 1rem 1.5rem 1rem;
+        margin: 0.5rem 1rem 0.5rem 1rem;
         border-radius: 0.5rem;
         box-shadow: 0 0.325rem 0.825rem rgba(90, 97, 105, 0.31);
+    }
 
+        .chart-overview > div {
+            border-radius: 0.5rem;
+        }
+
+    .main-chart-title {
+        padding: 1rem;
+        width: 100%;
     }
-    .main-chart-title{
-        padding:1rem;
-        width:100%;
-    }
-    .main-chart-title > h6{
-        margin:0;    
-        font-size: 1rem;
-        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-        color: #3d5170;
-    }
-    .border-bottom{
-        border-bottom: 1px solid #e1e5eb!important; 
+
+        .main-chart-title > h6 {
+            margin: 0;
+            font-size: 1rem;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+            color: #3d5170;
+        }
+
+    .border-bottom {
+        border-bottom: 1px solid #e1e5eb !important;
     }
 </style>
 <script>
-    $(document).ready(function () { 
+
+    $(document).ready(function () {
         //alert(1)
         //drawCurve("div-ip")
         initChartsMain()
         initCharPie()
+        initChartIp()
         $("#date-start").datetimepicker({//选择年月日
             format: 'YYYY-MM-DD',
             locale: moment.locale('zh-cn')
-　　　　});
+        });
         $("#date-end").datetimepicker({//选择年月日
             format: 'YYYY-MM-DD',
             locale: moment.locale('zh-cn')
-　　　　});
+        });
     });
-    function initChartsMain(){
-        var myChart = echarts.init(document.getElementById('chart-main'));
+    function initChartsMain() {
+        let seriesData = [
+            { name: '邮件营销', data: [120, 132, 101, 134, 90, 230, 210] },
+            { name: '联盟广告', data: [220, 182, 191, 234, 290, 330, 310] },
+            { name: '视频广告', data: [150, 232, 201, 154, 190, 330, 410] },
+            { name: '直接访问', data: [320, 332, 301, 334, 390, 330, 320] },
+            { name: '搜索引擎', data: [820, 932, 901, 934, 1290, 1330, 1320] }
+        ]
+        let xData = ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
 
-        // 指定图表的配置项和数据
-        option = {
-            title: {
-                text: '堆叠区域图'
-            },
-            tooltip : {
-                trigger: 'axis',
-                axisPointer: {
-                    type: 'cross',
-                    label: {
-                        backgroundColor: '#6a7985'
-                    }
-                }
-            },
-            legend: {
-                data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
-            },
-            toolbox: {
-                feature: {
-                    saveAsImage: {}
-                }
-            },
-            grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
-                containLabel: true
-            },
-            xAxis : [
-                {
-                    type : 'category',
-                    boundaryGap : false,
-                    data : ['周一','周二','周三','周四','周五','周六','周日']
-                }
-            ],
-            yAxis : [
-                {
-                    type : 'value'
-                }
-            ],
-            series : [
-                {
-                    name:'邮件营销',
-                    type:'line',
-                    smooth:true,
-                    stack: '总量',
-                    areaStyle: {},
-                    data:[120, 132, 101, 134, 90, 230, 210]
-                },
-                {
-                    name:'联盟广告',
-                    type:'line',
-                    smooth:true,
-                    stack: '总量',
-                    areaStyle: {},
-                    data:[220, 182, 191, 234, 290, 330, 310]
-                },
-                {
-                    name:'视频广告',
-                    type:'line',
-                    smooth:true,
-                    stack: '总量',
-                    areaStyle: {},
-                    data:[150, 232, 201, 154, 190, 330, 410]
-                },
-                {
-                    name:'直接访问',
-                    type:'line',
-                    smooth:true,
-                    stack: '总量',
-                    areaStyle: {normal: {}},
-                    data:[320, 332, 301, 334, 390, 330, 320]
-                },
-                {
-                    name:'搜索引擎',
-                    type:'line',
-                    smooth:true,
-                    stack: '总量',
-                    label: {
-                        normal: {
-                            show: true,
-                            position: 'top'
-                        }
-                    },
-                    areaStyle: {normal: {}},
-                    data:[820, 932, 901, 934, 1290, 1330, 1320]
-                }
-            ]
-        };
+        createLine('堆叠区域图', document.getElementById('chart-main'), seriesData, xData);
+    }
+    function initCharPie() {
+        let seriesData = [
+            { value: 335, name: '直接访问' },
+            { value: 310, name: '邮件营销' },
+            { value: 234, name: '联盟广告' },
+            { value: 135, name: '视频广告' },
+            { value: 1548, name: '搜索引擎' }
+        ]
+        createPie('某站点用户访问来源', '纯属虚构', document.getElementById('chart-pie'), '访问来源', seriesData)
+    }
 
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-    }
-    function initCharPie(){
-        var myChart = echarts.init(document.getElementById('chart-pie'));
-        option = {
-            title : {
-                text: '某站点用户访问来源',
-                subtext: '纯属虚构',
-                x:'center'
-            },
-            tooltip : {
-                trigger: 'item',
-                formatter: "{a} <br/>{b} : {c} ({d}%)"
-            },
-            legend: {
-                orient: 'vertical',
-                left: 'left',
-                data: ['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
-            },
-            series : [
-                {
-                    name: '访问来源',
-                    type: 'pie',
-                    radius : '55%',
-                    center: ['50%', '60%'],
-                    data:[
-                        {value:335, name:'直接访问'},
-                        {value:310, name:'邮件营销'},
-                        {value:234, name:'联盟广告'},
-                        {value:135, name:'视频广告'},
-                        {value:1548, name:'搜索引擎'}
-                    ],
-                    itemStyle: {
-                        emphasis: {
-                            shadowBlur: 10,
-                            shadowOffsetX: 0,
-                            shadowColor: 'rgba(0, 0, 0, 0.5)'
-                        }
-                    }
-                }
-            ]
-        };
-
-        myChart.setOption(option);
-    }
-    function drawCurve(id){
-        var c=document.getElementById(id)
-        let h = c.height
-        var ctx=c.getContext("2d");
-        let max = 0
-        ctx.moveTo(0,h);
-        rpoints = []
-        b =  (Math.abs(f(c.width-1)) * 2) / (h * 1.0 )
-        for(var i =0;i<c.width;i++){
-            let y = f(i)
-            //max = y > max ? y : max
-            ctx.lineTo(i,transY(y,h,b));
-        }
-        
-        ctx.stroke();
-    }
-    function f(x){
-        return -x*x
-    }
-    function transX(x,w){
-        return w - x
-    }
-    function transY(y,h,b){
-
-        let rh = h - y
-        let r = b * h
-        return r
+    function initChartIp() {
+        let innerGraphText = ["I P  V i s i t", "2,390", "↑  2.4%"]
+        let xyData = [
+            { x: '周一', y: 10 },
+            { x: '周二', y: 132 },
+            { x: '周三', y: 1011 },
+            { x: '周四', y: 134 },
+            { x: '周五', y: 900 },
+            { x: '周六', y: 230 },
+            { x: '周日', y: 12 },
+            { x: '周一', y: 10 },
+            { x: '周二', y: 132 },
+            { x: '周三', y: 1011 },
+            { x: '周四', y: 134 },
+            { x: '周五', y: 900 },
+            { x: '周六', y: 230 },
+            { x: '周日', y: 12 }
+        ]
+        createSmallLineGraph(innerGraphText, document.getElementById('div-ip'), '邮件营销', xyData)
+        createSmallLineGraph(innerGraphText, document.getElementById('div-2'), '邮件营销', xyData, 'rgb(255,65,105,0.5)')
+        createSmallLineGraph(innerGraphText, document.getElementById('div-3'), '邮件营销', xyData, 'rgb(24,135,255,0.5)')
+        createSmallLineGraph(innerGraphText, document.getElementById('div-4'), '邮件营销', xyData, 'rgb(254,218,128,0.5)')
+        createSmallLineGraph(innerGraphText, document.getElementById('div-5'), '邮件营销', xyData, 'rgb(128,198,113,0.5)')
     }
 </script>

@@ -1,0 +1,43 @@
+@using CqSheep.RazorSample.Components.Utils
+@{
+    ViewData["Title"] = "TableStat";
+    ViewData["MenuType"] = MenuType.TableStat;
+    
+    ViewData["RoutePath"] = PageUtil.GetPathDic("TableStat","/Admin/TableStat");
+    Layout = "~/Views/Layouts/_AdminHomeLayout.cshtml";
+}
+<div class="flex-column flex-main-start flex-align-center template">
+    <div class="flex-column flex-main-start flex-align-start component search-table">
+        <div>搜索条件</div>
+        <hr style="margin:0px;width:100%" />
+        <div class="flex-row flex-main-center flex-align-center search-expression">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">关键词</span>
+                <input type="text" class="form-control" placeholder="key words" aria-describedby="basic-addon1">
+            </div>
+            <div>
+                <button type="button" class="btn btn-info">搜索</button>
+            </div>
+        </div>
+    </div>
+    @await Html.PartialAsync("~/Views/ComponentItems/TablePage.cshtml")
+
+</div>
+
+<style>
+    .template > div
+    {
+        width: 100%;
+    }
+    .search-table{
+        height: auto;
+    }
+    .search-expression{
+        padding: 1rem;
+        width: 100%;
+    }
+    .input-group{
+        width: 40%;
+        margin-right: 1rem;
+    }
+</style>

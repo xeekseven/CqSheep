@@ -35,5 +35,6 @@ namespace CqSheep.RazorSample.Host.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
     }
 }

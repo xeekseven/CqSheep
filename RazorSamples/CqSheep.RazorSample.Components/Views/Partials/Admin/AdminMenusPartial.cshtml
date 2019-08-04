@@ -1,4 +1,10 @@
-﻿
+﻿@{ 
+    var type = ViewData["MenuType"];
+    var menuType = MenuType.OverViews;
+    if(type != null ){
+        menuType = (MenuType)type;
+    }
+}
 <div class="flex-column flex-main-start flex-align-center menu-contain">
     <div class="menu menu-title">
         <div class="flex-row flex-main-center flex-align-center mt-table">
@@ -9,43 +15,65 @@
     <div class="menu menu-selector">
         <ul class="flex-column flex-main-start flex-align-start nav">
             <li class="menu-item">
-                <a class="menu-link active" href="index.html">
+                @if (menuType == MenuType.OverViews)
+                {
+                    <a class="menu-link active" href="/Admin/Overview">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        <span>OverViews</span>
+                    </a>
+                }
+                else
+                {
+                    <a class="menu-link" href="/Admin/Overview">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        <span>OverViews</span>
+                    </a>
+                }
+
+            </li>
+            <li class="menu-item">
+                @if (menuType == MenuType.TableStat)
+                {
+                    <a class="menu-link active" href="/Admin/TableStat">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        <span>Table Stat</span>
+                    </a>
+                }
+                else
+                {
+                    <a class="menu-link" href="/Admin/TableStat">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        <span>Table Stat</span>
+                    </a>
+                }
+                
+            </li>
+            <li class="menu-item">
+                <a class="menu-link " href="#">
                     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                    <span>Blog Dashboard</span>
+                    <span>Auth</span>
                 </a>
             </li>
             <li class="menu-item">
-                <a class="menu-link" href="components-blog-posts.html">
-                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                    <span>Blog Posts</span>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-link " href="add-new-post.html">
-                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                    <span>Add New Post</span>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-link " href="form-components.html">
+                <a class="menu-link " href="#">
                     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                     <span>Forms &amp; Components</span>
                 </a>
             </li>
             <li class="menu-item">
-                <a class="menu-link " href="tables.html">
+                <a class="menu-link " href="#">
                     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                     <span>Tables</span>
                 </a>
             </li>
             <li class="menu-item">
-                <a class="menu-link " href="user-profile-lite.html">
+                <a class="menu-link " href="#">
                     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                     <span>User Profile</span>
                 </a>
             </li>
             <li class="menu-item">
-                <a class="menu-link " href="errors.html">
+                <a class="menu-link " href="#">
                     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                     <span>Errors</span>
                 </a>
@@ -58,7 +86,7 @@
         width:16.7%;
         top: 0px;
         position: fixed;
-        height: 100%;
+                        height: 100%;
         z-index: 1070;
         box-shadow: rgba(90, 97, 105, 0.1) 0px 0.125rem 9.375rem, rgba(90, 97, 105, 0.12) 0px 0.25rem 0.5rem, rgba(90, 97, 105, 0.1) 0px 0.9375rem 1.375rem, rgba(165, 182, 201, 0.1) 0px 0.4375rem 2.1875rem;
     }
@@ -67,7 +95,7 @@
         font-weight: 500;
         font-size: 1rem;
         color: rgba(0,0,0,.9);
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         margin-left: 0.5rem;
         cursor: pointer;
     }
@@ -99,8 +127,16 @@
         background-color: #fbfbfb !important;  
         color: #007bff;
     }
-    .menu-link:hover span{
+    .menu-item > .active{
+        box-shadow: inset 0.1875rem 0 0 #007bff;
+        background-color: #fbfbfb !important;  
         color: #007bff;
+    }
+    .menu-item > .active > .glyphicon{
+        color: #007bff;
+    }
+    .menu-link:hover span{
+                    color: #007bff;
     }
     .glyphicon{
         font-size: 1.125rem;
@@ -112,9 +148,17 @@
         will-change: color;
         color: #cacedb;
         transition: color .2s ease;
-        margin-right: .375rem;
+                margin-right: .375rem;
     }
     .glyphicon:hover{
         color: #3d5170;
     }
 </style>
+<script>
+    $(document).ready(function(e){
+        $(".menu-item a").click(function(){
+            $(".menu-item a").removeClass('active')
+            $(this).addClass('active')
+        });
+                });
+</script>
