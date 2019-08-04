@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using CqSheep.RazorSample.Repositories;
+using CqSheep.RazorSample.Repositories.Entity;
+using CqSheep.RazorSample.Repositories.Interfaces;
+using CqSheep.RazorSample.Services;
+using CqSheep.RazorSample.Services.Interfaces;
+using CqSheep.Utils.Repository.ColumnMapperCommon;
+using CqSheep.Utils.Repository.MySqlDatabase;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,9 +44,13 @@ namespace CqSheep.RazorSample.Host
                 options.LoginPath = new PathString("/Admin/Login");
                 options.ExpireTimeSpan = TimeSpan.FromDays(3);
             });
+            //Configuration.GetSection("");
+            services.AddSingleton<IUserRepository, UserRepository>( r=> new UserRepository("cqsheep_admin_website", "server=192.168.150.130;database={0};userid=root;password=root1234"));
+            services.AddSingleton<IAdminUserService, AdminUserService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            
+
+            ColumnMapper.SetMapper<UserEntity>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

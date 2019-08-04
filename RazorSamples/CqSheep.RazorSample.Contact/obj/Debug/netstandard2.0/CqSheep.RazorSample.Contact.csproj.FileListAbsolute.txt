@@ -1,0 +1,9 @@
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Contact\bin\Debug\netstandard2.0\CqSheep.RazorSample.Contact.deps.json
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Contact\bin\Debug\netstandard2.0\CqSheep.RazorSample.Contact.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Contact\bin\Debug\netstandard2.0\CqSheep.RazorSample.Contact.pdb
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Contact\obj\Debug\netstandard2.0\CqSheep.RazorSample.Contact.csprojAssemblyReference.cache
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Contact\obj\Debug\netstandard2.0\CqSheep.RazorSample.Contact.csproj.CoreCompileInputs.cache
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Contact\obj\Debug\netstandard2.0\CqSheep.RazorSample.Contact.AssemblyInfoInputs.cache
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Contact\obj\Debug\netstandard2.0\CqSheep.RazorSample.Contact.AssemblyInfo.cs
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Contact\obj\Debug\netstandard2.0\CqSheep.RazorSample.Contact.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Contact\obj\Debug\netstandard2.0\CqSheep.RazorSample.Contact.pdb

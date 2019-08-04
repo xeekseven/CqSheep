@@ -7,7 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqSheep.RazorSample.Compone
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqSheep.RazorSample.Host", "CqSheep.RazorSample.Host\CqSheep.RazorSample.Host.csproj", "{EB05EC1F-F7EE-4E26-8B51-FD38F759B7EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqSheep.RazorSample.Models", "CqSheep.RazorSample.Models\CqSheep.RazorSample.Models.csproj", "{66481105-9AF7-4BF1-BD4A-EDBA8C72DD8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqSheep.Utils.Repository", "..\..\CqSheep.Utils\CqSheep.Utils.Repository\CqSheep.Utils.Repository.csproj", "{9EE0346C-8F70-4744-92A0-A543DBCFF8D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqSheep.RazorSample.Repositories", "CqSheep.RazorSample.Repositories\CqSheep.RazorSample.Repositories.csproj", "{8A0C1545-4257-4F5D-B23D-A94D16AE0A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqSheep.RazorSample.Services", "CqSheep.RazorSample.Services\CqSheep.RazorSample.Services.csproj", "{C2F6D29B-605D-4839-BEE5-A9D9B16CAE8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqSheep.RazorSample.Contact", "CqSheep.RazorSample.Contact\CqSheep.RazorSample.Contact.csproj", "{78B92BE8-8575-4DBD-8809-AC4E658DADF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +29,22 @@ Global
 		{EB05EC1F-F7EE-4E26-8B51-FD38F759B7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB05EC1F-F7EE-4E26-8B51-FD38F759B7EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB05EC1F-F7EE-4E26-8B51-FD38F759B7EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66481105-9AF7-4BF1-BD4A-EDBA8C72DD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66481105-9AF7-4BF1-BD4A-EDBA8C72DD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66481105-9AF7-4BF1-BD4A-EDBA8C72DD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66481105-9AF7-4BF1-BD4A-EDBA8C72DD8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE0346C-8F70-4744-92A0-A543DBCFF8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE0346C-8F70-4744-92A0-A543DBCFF8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE0346C-8F70-4744-92A0-A543DBCFF8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE0346C-8F70-4744-92A0-A543DBCFF8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0C1545-4257-4F5D-B23D-A94D16AE0A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0C1545-4257-4F5D-B23D-A94D16AE0A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0C1545-4257-4F5D-B23D-A94D16AE0A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0C1545-4257-4F5D-B23D-A94D16AE0A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F6D29B-605D-4839-BEE5-A9D9B16CAE8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F6D29B-605D-4839-BEE5-A9D9B16CAE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F6D29B-605D-4839-BEE5-A9D9B16CAE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F6D29B-605D-4839-BEE5-A9D9B16CAE8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B92BE8-8575-4DBD-8809-AC4E658DADF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B92BE8-8575-4DBD-8809-AC4E658DADF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B92BE8-8575-4DBD-8809-AC4E658DADF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B92BE8-8575-4DBD-8809-AC4E658DADF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

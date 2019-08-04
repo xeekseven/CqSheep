@@ -1,0 +1,267 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Services\\CqSheep.RazorSample.Services.csproj": {}
+  },
+  "projects": {
+    "D:\\codes\\CqSheep.Utils\\CqSheep.Utils.Repository\\CqSheep.Utils.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\codes\\CqSheep.Utils\\CqSheep.Utils.Repository\\CqSheep.Utils.Repository.csproj",
+        "projectName": "CqSheep.Utils.Repository",
+        "projectPath": "D:\\codes\\CqSheep.Utils\\CqSheep.Utils.Repository\\CqSheep.Utils.Repository.csproj",
+        "packagesPath": "C:\\Users\\xeekseven\\.nuget\\packages\\",
+        "outputPath": "D:\\codes\\CqSheep.Utils\\CqSheep.Utils.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\xeekseven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.60.6, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Contact\\CqSheep.RazorSample.Contact.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Contact\\CqSheep.RazorSample.Contact.csproj",
+        "projectName": "CqSheep.RazorSample.Contact",
+        "projectPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Contact\\CqSheep.RazorSample.Contact.csproj",
+        "packagesPath": "C:\\Users\\xeekseven\\.nuget\\packages\\",
+        "outputPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Contact\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\xeekseven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Repositories\\CqSheep.RazorSample.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Repositories\\CqSheep.RazorSample.Repositories.csproj",
+        "projectName": "CqSheep.RazorSample.Repositories",
+        "projectPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Repositories\\CqSheep.RazorSample.Repositories.csproj",
+        "packagesPath": "C:\\Users\\xeekseven\\.nuget\\packages\\",
+        "outputPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\xeekseven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\codes\\CqSheep.Utils\\CqSheep.Utils.Repository\\CqSheep.Utils.Repository.csproj": {
+                "projectPath": "D:\\codes\\CqSheep.Utils\\CqSheep.Utils.Repository\\CqSheep.Utils.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Services\\CqSheep.RazorSample.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Services\\CqSheep.RazorSample.Services.csproj",
+        "projectName": "CqSheep.RazorSample.Services",
+        "projectPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Services\\CqSheep.RazorSample.Services.csproj",
+        "packagesPath": "C:\\Users\\xeekseven\\.nuget\\packages\\",
+        "outputPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\xeekseven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Contact\\CqSheep.RazorSample.Contact.csproj": {
+                "projectPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Contact\\CqSheep.RazorSample.Contact.csproj"
+              },
+              "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Repositories\\CqSheep.RazorSample.Repositories.csproj": {
+                "projectPath": "D:\\codes\\CqSheep\\RazorSamples\\CqSheep.RazorSample.Repositories\\CqSheep.RazorSample.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

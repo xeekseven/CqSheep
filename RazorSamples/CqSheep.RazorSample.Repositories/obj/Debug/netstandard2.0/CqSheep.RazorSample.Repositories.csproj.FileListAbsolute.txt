@@ -1,0 +1,14 @@
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\bin\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.deps.json
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\bin\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\bin\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.pdb
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\bin\Debug\netstandard2.0\CqSheep.Utils.Repository.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\bin\Debug\netstandard2.0\CqSheep.Utils.Repository.pdb
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\obj\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.csprojAssemblyReference.cache
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\obj\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.csproj.CoreCompileInputs.cache
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\obj\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.AssemblyInfoInputs.cache
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\obj\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.AssemblyInfo.cs
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\obj\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.csproj.CopyComplete
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\obj\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\obj\Debug\netstandard2.0\CqSheep.RazorSample.Repositories.pdb
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Repositories\bin\Debug\netstandard2.0\Newtonsoft.Json.xml

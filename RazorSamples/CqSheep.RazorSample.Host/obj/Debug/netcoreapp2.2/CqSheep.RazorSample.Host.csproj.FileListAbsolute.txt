@@ -40,3 +40,11 @@ D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\obj\Debug\netcoreapp2.2\R
 D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
 D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\bin\Debug\netcoreapp2.2\CqSheep.RazorSample.Contact.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\bin\Debug\netcoreapp2.2\CqSheep.RazorSample.Repositories.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\bin\Debug\netcoreapp2.2\CqSheep.RazorSample.Services.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\bin\Debug\netcoreapp2.2\CqSheep.Utils.Repository.dll
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\bin\Debug\netcoreapp2.2\CqSheep.RazorSample.Services.pdb
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\bin\Debug\netcoreapp2.2\CqSheep.RazorSample.Contact.pdb
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\bin\Debug\netcoreapp2.2\CqSheep.RazorSample.Repositories.pdb
+D:\codes\CqSheep\RazorSamples\CqSheep.RazorSample.Host\bin\Debug\netcoreapp2.2\CqSheep.Utils.Repository.pdb
